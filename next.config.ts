@@ -1,0 +1,22 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // PWA configuration will be handled by next-pwa
+  experimental: {
+    ppr: false, // Disable Partial Prerendering for PWA compatibility
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'your-domain.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  // Turbopack configuration
+  turbopack: {},
+};
+
+export default nextConfig;
