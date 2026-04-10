@@ -1,13 +1,24 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useThemeStore } from '@/lib/store';
+import { useTheme } from 'next-themes';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useThemeStore();
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const currentTheme = mounted ? resolvedTheme ?? 'light' : 'light';
+
+  const handleThemeToggle = () => {
+    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
@@ -42,15 +53,21 @@ const Navbar = () => {
 
           <div className="flex items-center space-x-4">
             <button
-              onClick={toggleTheme}
+              onClick={handleThemeToggle}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+              aria-label="Toggle dark mode"
             >
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+              {mounted ? (
+                currentTheme === 'dark' ? <Sun size={20} /> : <Moon size={20} />
+              ) : (
+                <Moon size={20} />
+              )}
             </button>
 
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
