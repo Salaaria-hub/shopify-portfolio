@@ -17,16 +17,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shopify Developer Tools - Free Tools Platform",
-  description: "Free tools for Shopify developers: image optimizer, PDF merger, code formatter, and more. Boost your Shopify store performance.",
+  title: "Shopify Growth Tools | Free Merchant & Developer Tools",
+  description: "All-in-one toolkit for Shopify growth, including image compressors, profit calculators, and PDF tools.",
   keywords: "Shopify, developer tools, image optimizer, PDF merger, code formatter",
   authors: [{ name: "Shopify Portfolio" }],
   openGraph: {
-    title: "Shopify Developer Tools",
-    description: "Free tools for Shopify developers",
+    title: "Shopify Growth Tools | Free Merchant & Developer Tools",
+    description: "All-in-one toolkit for Shopify growth, including image compressors, profit calculators, and PDF tools.",
     type: "website",
   },
   manifest: "/manifest.json",
+  verification: {
+    google: 'iTvoO687LL1giHwV0-gwOl7U4js-a5AJBAdQI-2lkm4',
+  },
 };
 
 export default function RootLayout({
@@ -37,6 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning={true}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning={true}>
