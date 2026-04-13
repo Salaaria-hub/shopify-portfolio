@@ -81,9 +81,9 @@ const portfolio = [
 
 export default function Home() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-white dark:bg-black text-gray-900 dark:text-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-20 pb-32 sm:pt-32 sm:pb-40">
+      <section className="relative overflow-hidden pt-20 pb-32 sm:pt-32 sm:pb-40 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900">
         {/* Gradient Background */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute -top-40 right-0 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl"></div>
@@ -97,9 +97,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-gray-900/50 backdrop-blur mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-900/50 backdrop-blur mb-8">
               <Sparkles size={16} className="text-blue-400" />
-              <span className="text-sm text-gray-300">AI-Powered Tools for Shopify Growth</span>
+              <span className="text-sm text-gray-700 dark:text-gray-300">AI-Powered Tools for Shopify Growth</span>
             </div>
 
             <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6 leading-tight">
@@ -109,7 +109,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-xl text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
               Free-tier access to premium tools that merchants and developers use to optimize, scale, and automate their Shopify stores. Built by industry experts.
             </p>
 
@@ -132,7 +132,7 @@ export default function Home() {
               >
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2 px-8 py-4 border border-gray-700 rounded-xl font-semibold hover:border-gray-600 bg-gray-900/50 backdrop-blur transition-all"
+                  className="inline-flex items-center gap-2 px-8 py-4 border border-gray-300 dark:border-gray-700 rounded-xl font-semibold hover:border-gray-400 dark:hover:border-gray-600 bg-white dark:bg-gray-900/50 backdrop-blur transition-all"
                 >
                   Custom Services
                   <ArrowRight size={20} />
@@ -153,11 +153,11 @@ export default function Home() {
                   <motion.div
                     key={i}
                     variants={fadeInUp}
-                    className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 backdrop-blur"
+                    className="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 backdrop-blur"
                   >
                     <Icon size={20} className="text-blue-400 mb-2 mx-auto" />
                     <p className="text-2xl font-bold">{stat.number}</p>
-                    <p className="text-sm text-gray-400">{stat.label}</p>
+                    <p className="text-sm text-gray-700 dark:text-gray-400">{stat.label}</p>
                   </motion.div>
                 );
               })}
@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Trust Section */}
-      <section className="py-16 sm:py-24 border-t border-gray-800">
+      <section className="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -177,7 +177,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Trusted by Shopify Community</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
               From solo entrepreneurs to enterprise teams, developers and merchants rely on our tools daily.
             </p>
           </motion.div>
@@ -197,11 +197,11 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={fadeInUp}
-                className="p-6 rounded-xl border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-gray-700 transition-all"
+                className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 backdrop-blur hover:border-gray-300 dark:hover:border-gray-700 transition-all"
               >
                 <CheckCircle size={24} className="text-green-400 mb-3" />
                 <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-400 text-sm">{item.desc}</p>
+                <p className="text-gray-700 dark:text-gray-400 text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -209,7 +209,7 @@ export default function Home() {
       </section>
 
       {/* Featured Tools */}
-      <section className="py-16 sm:py-24 border-t border-gray-800">
+      <section className="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -219,7 +219,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Powerful Tools, Zero Learning Curve</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
               Simple interfaces that solve real problems. Use immediately, no setup required.
             </p>
           </motion.div>
@@ -236,7 +236,7 @@ export default function Home() {
               return (
                 <motion.div key={i} variants={fadeInUp}>
                   <Link href={tool.link}>
-                    <div className="group relative h-full p-6 rounded-xl border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-gray-700 hover:bg-gray-900/80 transition-all duration-300 cursor-pointer overflow-hidden">
+                    <div className="group relative h-full p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 backdrop-blur hover:border-gray-300 dark:hover:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900/80 transition-all duration-300 cursor-pointer overflow-hidden">
                       {/* Gradient Background on Hover */}
                       <div
                         className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-gradient-to-br ${tool.color}`}
@@ -251,7 +251,7 @@ export default function Home() {
                           {tool.title}
                         </h3>
 
-                        <p className="text-gray-400 mb-4 group-hover:text-gray-300 transition-colors">
+                        <p className="text-gray-700 dark:text-gray-400 mb-4 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
                           {tool.description}
                         </p>
 
@@ -286,7 +286,7 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-16 sm:py-24 border-t border-gray-800">
+      <section className="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -296,7 +296,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Proven Results</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
               Real projects, real impact. See what we've delivered for merchants and developers.
             </p>
           </motion.div>
@@ -312,13 +312,13 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={fadeInUp}
-                className="p-6 rounded-xl border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-gray-700 hover:bg-gray-900/80 transition-all duration-300 group"
+                className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 backdrop-blur hover:border-gray-300 dark:hover:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900/80 transition-all duration-300 group"
               >
-                <div className="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-4">
-                  <span className="text-xs font-medium text-blue-400">{item.tag}</span>
+                <div className="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 mb-4">
+                  <span className="text-xs font-medium text-blue-700 dark:text-blue-400">{item.tag}</span>
                 </div>
-                <h3 className="text-lg font-bold mb-2 group-hover:text-blue-300 transition-colors">{item.name}</h3>
-                <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{item.description}</p>
+                <h3 className="text-lg font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">{item.name}</h3>
+                <p className="text-gray-700 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">{item.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -342,14 +342,14 @@ export default function Home() {
       </section>
 
       {/* CTA Section for Hiring */}
-      <section className="py-16 sm:py-24 border-t border-gray-800">
+      <section className="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/80 to-gray-900/40 backdrop-blur p-8 sm:p-12 overflow-hidden"
+            className="relative rounded-2xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-white dark:from-gray-900/80 to-gray-100 dark:to-gray-900/40 backdrop-blur p-8 sm:p-12 overflow-hidden"
           >
             {/* Gradient Background */}
             <div className="absolute inset-0 -z-10">
@@ -359,7 +359,7 @@ export default function Home() {
 
             <div className="text-center">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">Need Custom Development?</h2>
-              <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+              <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-8">
                 From theme customization to app development and performance optimization, we deliver enterprise-grade Shopify solutions.
               </p>
 
@@ -382,7 +382,7 @@ export default function Home() {
                 >
                   <Link
                     href="/services"
-                    className="inline-flex items-center gap-2 px-8 py-4 border border-gray-700 rounded-xl font-semibold hover:border-gray-600 bg-gray-900/50 backdrop-blur transition-all"
+                    className="inline-flex items-center gap-2 px-8 py-4 border border-gray-300 dark:border-gray-700 rounded-xl font-semibold hover:border-gray-400 dark:hover:border-gray-600 bg-white dark:bg-gray-900/50 backdrop-blur transition-all"
                   >
                     View Services
                   </Link>
@@ -394,7 +394,7 @@ export default function Home() {
       </section>
 
       {/* Affiliate/Resources Section */}
-      <section className="py-16 sm:py-24 border-t border-gray-800">
+      <section className="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -404,7 +404,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Recommended Resources</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
               Curated partnerships to help you build and scale your Shopify business.
             </p>
           </motion.div>
@@ -422,16 +422,16 @@ export default function Home() {
               rel="noopener noreferrer"
               variants={fadeInUp}
               whileHover={{ y: -4 }}
-              className="p-8 rounded-xl border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-gray-700 hover:bg-gray-900/80 transition-all group"
+              className="p-8 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 backdrop-blur hover:border-gray-300 dark:hover:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900/80 transition-all group"
             >
               <GitBranch size={24} className="text-blue-400 mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold mb-2 group-hover:text-blue-300 transition-colors">
+              <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">
                 Launch Your Shopify Store
               </h3>
-              <p className="text-gray-400 group-hover:text-gray-300 transition-colors mb-4">
+              <p className="text-gray-700 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors mb-4">
                 Start selling online with the leading e-commerce platform. Get 3 months for $1/month.
               </p>
-              <span className="text-blue-400 group-hover:text-blue-300 font-medium transition-colors flex items-center gap-2">
+              <span className="text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 font-medium transition-colors flex items-center gap-2">
                 Start for $1
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </span>
@@ -443,16 +443,16 @@ export default function Home() {
               rel="noopener noreferrer"
               variants={fadeInUp}
               whileHover={{ y: -4 }}
-              className="p-8 rounded-xl border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-gray-700 hover:bg-gray-900/80 transition-all group"
+              className="p-8 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 backdrop-blur hover:border-gray-300 dark:hover:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900/80 transition-all group"
             >
               <Code2 size={24} className="text-purple-400 mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold mb-2 group-hover:text-purple-300 transition-colors">
+              <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors">
                 Discover Shopify Apps
               </h3>
-              <p className="text-gray-400 group-hover:text-gray-300 transition-colors mb-4">
+              <p className="text-gray-700 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors mb-4">
                 Extend functionality with thousands of integrations. Find the perfect app for your store.
               </p>
-              <span className="text-purple-400 group-hover:text-purple-300 font-medium transition-colors flex items-center gap-2">
+              <span className="text-purple-600 dark:text-purple-400 group-hover:text-purple-700 dark:group-hover:text-purple-300 font-medium transition-colors flex items-center gap-2">
                 Explore Apps
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </span>
@@ -462,7 +462,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 sm:py-24 border-t border-gray-800">
+      <section className="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -473,7 +473,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Ready to Optimize Your Shop?
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-8">
               Start with free tools and scale up when you need advanced services.
             </p>
 
