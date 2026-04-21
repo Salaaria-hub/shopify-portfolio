@@ -1,6 +1,6 @@
 {
   "name": "Shopify Developer Tools",
-  "short_name": "ShopifyDev",
+  "short_name": "ShopifyCode",
   "description": "Free tools for Shopify developers: image optimizer, PDF merger, code formatter, and more.",
   "start_url": "/",
   "display": "standalone",

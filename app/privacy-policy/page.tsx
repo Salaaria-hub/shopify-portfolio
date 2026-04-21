@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
               If you have any questions about this privacy policy, please contact us at:
             </p>
             <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
-              <p className="text-gray-900 dark:text-white font-medium">Email: privacy@shopifydev.com</p>
+              <p className="text-gray-900 dark:text-white font-medium">Email: privacy@shopifycode.com</p>
               <p className="text-gray-600 dark:text-gray-300">Address: [Your Business Address]</p>
             </div>
           </div>

@@ -2,22 +2,34 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
+import { useThemeStore } from '@/lib/store';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+  const { theme, toggleTheme } = useThemeStore();
+  const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  const currentTheme = mounted ? resolvedTheme ?? 'light' : 'light';
+    const updateResolvedTheme = () => {
+      if (theme === 'system') {
+        setResolvedTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } else {
+        setResolvedTheme(theme);
+      }
+    };
+    updateResolvedTheme();
+    if (theme === 'system') {
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      mediaQuery.addEventListener('change', updateResolvedTheme);
+      return () => mediaQuery.removeEventListener('change', updateResolvedTheme);
+    }
+  }, [theme]);
 
   const handleThemeToggle = () => {
-    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    toggleTheme();
   };
 
   return (
@@ -26,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-              ShopifyDev
+              ShopifyCode
             </Link>
           </div>
 
@@ -58,7 +70,7 @@ const Navbar = () => {
               aria-label="Toggle dark mode"
             >
               {mounted ? (
-                currentTheme === 'dark' ? <Sun size={20} /> : <Moon size={20} />
+                resolvedTheme === 'dark' ? <Sun size={20} /> : <Moon size={20} />
               ) : (
                 <Moon size={20} />
               )}
