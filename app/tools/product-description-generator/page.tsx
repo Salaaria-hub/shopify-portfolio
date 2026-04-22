@@ -12,49 +12,46 @@ export default function ProductDescriptionGeneratorPage() {
   const [targetAudience, setTargetAudience] = useState('');
   const [tone, setTone] = useState('professional');
   const [generatedDescription, setGeneratedDescription] = useState('');
+  const [isGenerating, setIsGenerating] = useState(false);
 
-  const templates = {
-    professional: {
-      intro: "Introducing the {productName}, a premium {productType} designed for {audience}.",
-      features: "Key features include {features}.",
-      benefits: "This product delivers exceptional quality and performance, making it perfect for {audience} who demand the best.",
-      cta: "Elevate your experience with the {productName} today."
-    },
-    casual: {
-      intro: "Check out the {productName} - an awesome {productType} made just for {audience}!",
-      features: "It comes with {features} to make your life easier.",
-      benefits: "You'll love how it performs and feels - it's designed with you in mind.",
-      cta: "Grab yours now and start enjoying the difference!"
-    },
-    luxury: {
-      intro: "Discover the exquisite {productName}, a masterpiece of {productType} craftsmanship crafted for discerning {audience}.",
-      features: "Featuring {features}, this exceptional piece represents the pinnacle of quality and sophistication.",
-      benefits: "Indulge in unparalleled excellence that transcends ordinary expectations.",
-      cta: "Elevate your collection with this extraordinary {productName}."
-    }
-  };
-
-  const generateDescription = () => {
+  const generateDescription = async () => {
     if (!productName.trim() || !productType.trim()) {
       toast.error('Please enter at least a product name and type');
       return;
     }
 
-    const template = templates[tone as keyof typeof templates];
-    const features = keyFeatures.trim() || 'innovative design and superior functionality';
-    const audience = targetAudience.trim() || 'modern consumers';
+    setIsGenerating(true);
+    setGeneratedDescription('');
 
-    const description = `${template.intro.replace('{productName}', productName).replace('{productType}', productType).replace('{audience}', audience)}
+    try {
+      const response = await fetch('/api/generate-description', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          productName,
+          productType,
+          keyFeatures,
+          targetAudience,
+          tone
+        })
+      });
 
-${template.features.replace('{features}', features)}
+      const data = await response.json();
 
-${template.benefits.replace('{audience}', audience)}
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to generate description');
+      }
 
-${template.cta.replace('{productName}', productName)}`;
-
-    setGeneratedDescription(description);
-    toast.success('Description generated successfully!');
+      setGeneratedDescription(data.description);
+      toast.success('Description generated successfully!');
+    } catch (error: any) {
+      toast.error(error.message || 'An error occurred');
+    } finally {
+      setIsGenerating(false);
+    }
   };
+
+
 
   const copyToClipboard = async () => {
     try {
@@ -158,11 +155,19 @@ ${template.cta.replace('{productName}', productName)}`;
           <div className="flex gap-4 mb-8">
             <button
               onClick={generateDescription}
-              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              disabled={isGenerating}
+              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
             >
-              Generate Description
+              {isGenerating ? (
+                <>
+                  <RefreshCw className="animate-spin mr-2" size={16} />
+                  Generating...
+                </>
+              ) : (
+                'Generate Description'
+              )}
             </button>
-            {generatedDescription && (
+            {generatedDescription && !isGenerating && (
               <button
                 onClick={regenerate}
                 className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors flex items-center"
