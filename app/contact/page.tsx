@@ -51,52 +51,52 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-[#0a0a0a] min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans text-gray-900 dark:text-neutral-100 flex items-center justify-center pt-24 transition-colors duration-200">
-      <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row bg-white dark:bg-[#141414] rounded-2xl border border-gray-200 dark:border-neutral-800 shadow-xl dark:shadow-2xl overflow-hidden transition-colors duration-200">
+    <div className="bg-slate-50 dark:bg-[#0a0a0a] min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans text-slate-900 dark:text-neutral-100 flex items-center justify-center pt-24 transition-colors duration-300">
+      <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row bg-white dark:bg-[#141414] rounded-2xl border border-slate-200 dark:border-neutral-800 shadow-2xl overflow-hidden transition-colors duration-300">
         
         {/* === Left Section: Value Proposition === */}
-        <section className="flex-1 p-8 lg:p-16 bg-gray-50 dark:bg-gradient-to-br dark:from-[#111] dark:to-[#1a1a1a] border-b lg:border-b-0 lg:border-r border-gray-200 dark:border-neutral-800 flex flex-col justify-center transition-colors duration-200">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-white/5 border border-gray-200 dark:border-neutral-800 rounded-full text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-neutral-400 mb-8 self-start shadow-sm dark:shadow-none">
-            <span className="w-2 h-2 rounded-full bg-green-500 dark:bg-green-400 shadow-[0_0_10px_rgba(34,197,94,0.4)] dark:shadow-[0_0_10px_rgba(74,222,128,0.8)]"></span>
+        <section className="flex-1 p-8 lg:p-16 bg-slate-100 dark:bg-gradient-to-br dark:from-[#111] dark:to-[#1a1a1a] border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-neutral-800 flex flex-col justify-center transition-colors duration-300">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-white/5 border border-slate-200 dark:border-neutral-800 rounded-full text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-neutral-400 mb-8 self-start">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 dark:bg-green-400 shadow-[0_0_10px_rgba(16,185,129,0.5)] dark:shadow-[0_0_10px_rgba(74,222,128,0.8)]"></span>
             Accepting New Projects
           </div>
           
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-tight text-gray-900 dark:text-white">
-            I Build Shopify Stores That <span className="text-green-600 dark:text-green-400">Actually Convert.</span>
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-tight text-slate-900 dark:text-white">
+            I Build Shopify Stores That <span className="text-emerald-600 dark:text-green-400">Actually Convert.</span>
           </h1>
-          <p className="text-lg text-gray-600 dark:text-neutral-400 mb-10 max-w-md">
+          <p className="text-lg text-slate-600 dark:text-neutral-400 mb-10 max-w-md">
             Stop losing money to slow speeds and poor UX. I engineer high-performance, premium Shopify 2.0 experiences designed specifically for scaling DTC brands.
           </p>
 
           <div className="space-y-6 mb-10">
             <div className="flex items-start gap-4">
-              <CheckCircle className="text-green-600 dark:text-green-400 shrink-0 mt-1" size={24} />
+              <CheckCircle className="text-emerald-600 dark:text-green-400 shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="text-lg font-semibold mb-1 text-gray-900 dark:text-white">Conversion-Focused Development</h4>
-                <p className="text-gray-600 dark:text-neutral-400 text-sm">Data-driven architecture, seamless checkout flows, and reduced friction to maximize your ROAS.</p>
+                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Conversion-Focused Development</h4>
+                <p className="text-slate-600 dark:text-neutral-400 text-sm">Data-driven architecture, seamless checkout flows, and reduced friction to maximize your ROAS.</p>
               </div>
             </div>
             
             <div className="flex items-start gap-4">
-              <Clock className="text-green-600 dark:text-green-400 shrink-0 mt-1" size={24} />
+              <Clock className="text-emerald-600 dark:text-green-400 shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="text-lg font-semibold mb-1 text-gray-900 dark:text-white">Fast Turnaround & Execution</h4>
-                <p className="text-gray-600 dark:text-neutral-400 text-sm">Agile development workflows tailored for high-growth startups moving at lightning speed.</p>
+                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Fast Turnaround & Execution</h4>
+                <p className="text-slate-600 dark:text-neutral-400 text-sm">Agile development workflows tailored for high-growth startups moving at lightning speed.</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <HeartHandshake className="text-green-600 dark:text-green-400 shrink-0 mt-1" size={24} />
+              <HeartHandshake className="text-emerald-600 dark:text-green-400 shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="text-lg font-semibold mb-1 text-gray-900 dark:text-white">Reliable Long-Term Support</h4>
-                <p className="text-gray-600 dark:text-neutral-400 text-sm">I act as an extension of your team, providing proactive optimization and bug-free custom liquid code.</p>
+                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Reliable Long-Term Support</h4>
+                <p className="text-slate-600 dark:text-neutral-400 text-sm">I act as an extension of your team, providing proactive optimization and bug-free custom liquid code.</p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-wrap gap-3 mt-auto pt-8">
             {['Shopify 2.0', 'Custom Liquid', 'CRO Strategy', 'Speed Optimization', 'Headless Build'].map(skill => (
-              <span key={skill} className="px-4 py-2 bg-green-50 dark:bg-[#008060]/10 border border-green-200 dark:border-[#008060]/20 text-green-700 dark:text-green-400 rounded-full text-sm font-medium">
+              <span key={skill} className="px-4 py-2 bg-emerald-50 dark:bg-[#008060]/10 border border-emerald-200 dark:border-[#008060]/20 text-emerald-700 dark:text-green-400 rounded-full text-sm font-medium transition-colors">
                 {skill}
               </span>
             ))}
@@ -104,13 +104,13 @@ export default function ContactPage() {
         </section>
 
         {/* === Right Section: High-Ticket Lead Form === */}
-        <section className="flex-[1.1] p-8 lg:p-16">
+        <section className="flex-[1.1] p-8 lg:p-16 transition-colors duration-300">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Book a Free Strategy Call</h2>
-            <p className="text-gray-600 dark:text-neutral-400 text-sm">Fill out the form below. I usually respond within 12–24 hours.</p>
+            <h2 className="text-2xl font-bold mb-2 text-slate-900 dark:text-white">Book a Free Strategy Call</h2>
+            <p className="text-slate-600 dark:text-neutral-400 text-sm">Fill out the form below. I usually respond within 12–24 hours.</p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5 text-gray-900 dark:text-neutral-100">
+          <form onSubmit={handleSubmit} className="space-y-5 text-slate-900 dark:text-neutral-100">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
                 <label className="block text-sm font-medium mb-1">Name <span className="text-red-500">*</span></label>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors"
                 />
               </div>
               
@@ -134,7 +134,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   placeholder="john@brand.com"
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors"
                 />
               </div>
             </div>
@@ -148,9 +148,9 @@ export default function ContactPage() {
                 onChange={handleChange}
                 required
                 placeholder="+91 98765 43210"
-                className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors"
+                className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors"
               />
-              <p className="text-xs text-gray-500 dark:text-neutral-500 mt-1">Required for fast communication. Serious inquiries only.</p>
+              <p className="text-xs text-slate-500 dark:text-neutral-500 mt-1">Required for fast communication. Serious inquiries only.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   value={formData.project_type}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors appearance-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors appearance-none"
                 >
                   <option value="" disabled>Select an option</option>
                   <option value="Store Design & Build">Store Design & Build</option>
@@ -178,7 +178,7 @@ export default function ContactPage() {
                   value={formData.budget}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors appearance-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors appearance-none"
                 >
                   <option value="" disabled>Select budget range</option>
                   <option value="Under ₹15K">Under ₹15K</option>
@@ -196,7 +196,7 @@ export default function ContactPage() {
                   name="revenue"
                   value={formData.revenue}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors appearance-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors appearance-none"
                 >
                   <option value="" disabled>Current scale</option>
                   <option value="Pre-launch">Pre-launch / Idea phase</option>
@@ -212,7 +212,7 @@ export default function ContactPage() {
                   name="timeline"
                   value={formData.timeline}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors appearance-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors appearance-none"
                 >
                   <option value="" disabled>How soon?</option>
                   <option value="ASAP">ASAP (Urgent)</option>
@@ -225,11 +225,11 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm font-medium mb-2">Do you have an existing store? <span className="text-red-500">*</span></label>
               <div className="grid grid-cols-2 gap-3">
-                <label className={`cursor-pointer text-center py-3 rounded-xl border transition-all ${formData.existing_store === 'Yes' ? 'bg-green-50 dark:bg-[#008060]/10 border-green-600 dark:border-[#008060] text-green-700 dark:text-green-400' : 'bg-white dark:bg-[#1f1f1f] border-gray-300 dark:border-neutral-800'}`}>
+                <label className={`cursor-pointer text-center py-3 rounded-xl border transition-all ${formData.existing_store === 'Yes' ? 'bg-emerald-50 dark:bg-[#008060]/10 border-emerald-500 dark:border-[#008060] text-emerald-700 dark:text-green-400' : 'bg-white dark:bg-[#1f1f1f] border-slate-300 dark:border-neutral-800'}`}>
                   <input type="radio" name="existing_store" value="Yes" className="hidden" onChange={handleChange} required />
                   Yes
                 </label>
-                <label className={`cursor-pointer text-center py-3 rounded-xl border transition-all ${formData.existing_store === 'No' ? 'bg-green-50 dark:bg-[#008060]/10 border-green-600 dark:border-[#008060] text-green-700 dark:text-green-400' : 'bg-white dark:bg-[#1f1f1f] border-gray-300 dark:border-neutral-800'}`}>
+                <label className={`cursor-pointer text-center py-3 rounded-xl border transition-all ${formData.existing_store === 'No' ? 'bg-emerald-50 dark:bg-[#008060]/10 border-emerald-500 dark:border-[#008060] text-emerald-700 dark:text-green-400' : 'bg-white dark:bg-[#1f1f1f] border-slate-300 dark:border-neutral-800'}`}>
                   <input type="radio" name="existing_store" value="No" className="hidden" onChange={handleChange} />
                   No
                 </label>
@@ -246,7 +246,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   placeholder="https://yourstore.com"
-                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors"
                 />
               </div>
             )}
@@ -260,27 +260,27 @@ export default function ContactPage() {
                 required
                 rows={4}
                 placeholder="What are the biggest challenges you're currently facing with your store?"
-                className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-gray-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-green-600 dark:focus:border-[#008060] focus:ring-1 focus:ring-green-600 dark:focus:ring-[#008060] transition-colors resize-none"
+                className="w-full px-4 py-3 bg-white dark:bg-[#1f1f1f] border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:border-emerald-500 dark:focus:border-[#008060] focus:ring-1 focus:ring-emerald-500 dark:focus:ring-[#008060] transition-colors resize-none"
               ></textarea>
             </div>
 
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-4 px-6 bg-green-600 hover:bg-green-700 dark:bg-[#008060] dark:hover:bg-[#00664d] text-white font-semibold rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-70 disabled:cursor-not-allowed mt-2"
+              className="w-full py-4 px-6 bg-emerald-600 hover:bg-emerald-700 dark:bg-[#008060] dark:hover:bg-[#00664d] text-white font-semibold rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-70 disabled:cursor-not-allowed mt-2"
             >
               {isSubmitting ? 'Sending Request...' : 'Submit Request'}
               {!isSubmitting && <ArrowRight size={20} />}
             </button>
           </form>
 
-          <div className="mt-8 pt-8 border-t border-gray-200 dark:border-neutral-800 text-center">
-            <p className="text-gray-600 dark:text-neutral-400 text-sm mb-4">Not ready to fill the form?</p>
+          <div className="mt-8 pt-8 border-t border-slate-200 dark:border-neutral-800 text-center">
+            <p className="text-slate-600 dark:text-neutral-400 text-sm mb-4">Not ready to fill the form?</p>
             <a 
               href="https://wa.me/91XXXXXXXXXX" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-neutral-700 rounded-full text-sm font-medium text-gray-700 dark:text-neutral-300 hover:bg-[#25D366] hover:border-[#25D366] hover:text-white dark:hover:bg-[#25D366] dark:hover:border-[#25D366] transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 dark:border-neutral-700 rounded-full text-sm font-medium text-slate-700 dark:text-neutral-300 hover:bg-[#25D366] hover:border-[#25D366] hover:text-white dark:hover:bg-[#25D366] dark:hover:border-[#25D366] transition-all"
             >
               <Phone size={18} />
               Chat on WhatsApp
