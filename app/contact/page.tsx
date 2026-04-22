@@ -181,10 +181,10 @@ export default function ContactPage() {
                   className="w-full px-4 py-3 bg-[#1f1f1f] border border-neutral-800 rounded-xl focus:outline-none focus:border-[#008060] focus:ring-1 focus:ring-[#008060] transition-colors appearance-none"
                 >
                   <option value="" disabled>Select budget range</option>
-                  <option value="Under ₹50K">Under ₹50K</option>
-                  <option value="₹50K - ₹1L">₹50K – ₹1L</option>
-                  <option value="₹1L - ₹3L">₹1L – ₹3L</option>
-                  <option value="₹3L+">₹3L+</option>
+                  <option value="Under ₹15K">Under ₹15K</option>
+                  <option value="₹15K - ₹35K">₹15K – ₹35K</option>
+                  <option value="₹35K - ₹75K">₹35K – ₹75K</option>
+                  <option value="₹75K+">₹75K+</option>
                 </select>
               </div>
             </div>
