@@ -17,13 +17,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shopify Growth Tools | Free Merchant & Developer Tools",
-  description: "All-in-one toolkit for Shopify growth, including image compressors, profit calculators, and PDF tools.",
-  keywords: "Shopify, developer tools, image optimizer, PDF merger, code formatter",
+  metadataBase: new URL("https://shopifycode.vercel.app"),
+  title: "Expert Shopify Developer & CRO Specialist | Boost Your Store Sales",
+  description: "Hire an expert Shopify Developer specializing in Conversion Rate Optimization (CRO), custom theme development, and high-performance eCommerce solutions to scale your business.",
+  keywords: "Shopify developer, CRO specialist, Shopify conversion rate optimization, custom Shopify themes, eCommerce expert",
   authors: [{ name: "Shopify Portfolio" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Shopify Growth Tools | Free Merchant & Developer Tools",
-    description: "All-in-one toolkit for Shopify growth, including image compressors, profit calculators, and PDF tools.",
+    title: "Expert Shopify Developer & CRO Specialist | Boost Your Store Sales",
+    description: "Hire an expert Shopify Developer specializing in Conversion Rate Optimization (CRO), custom theme development, and high-performance eCommerce solutions to scale your business.",
     type: "website",
   },
   manifest: "/manifest.json",

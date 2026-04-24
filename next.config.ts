@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'your-domain.com',
+        hostname: 'shopifycode.vercel.app',
         port: '',
         pathname: '/**',
       },

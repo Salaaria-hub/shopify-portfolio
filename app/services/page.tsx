@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { Code, Palette, Zap, Shield, BarChart, Smartphone, Wrench, Rocket, Puzzle } from 'lucide-react';
 
+export const metadata = {
+  title: 'Shopify Development Services & CRO | Hire an Expert',
+  description: 'Boost your eCommerce sales with expert Shopify development, custom theme design, and conversion rate optimization (CRO) services.',
+};
+
 const services = [
   {
     icon: Code,
