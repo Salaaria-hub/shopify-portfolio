@@ -1,3 +1,11 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About The Expert | Custom Shopify Theme & Headless Developer',
+  description: 'Learn about my mission as a dedicated Conversion Rate Expert and specialized eCommerce developer. I bridge the gap between stunning design and deep Shopify Speed Optimization.',
+  keywords: 'Shopify expert, Headless Shopify developer, Custom Shopify Theme coder, eCommerce consultant, Conversion Rate Expert',
+};
+
 export default function AboutPage() {
   return (
     <div className="bg-gray-50 min-h-screen">

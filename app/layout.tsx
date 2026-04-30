@@ -19,16 +19,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://shopifycode.vercel.app"),
   title: "Expert Shopify Developer & CRO Specialist | Boost Your Store Sales",
-  description: "Hire an expert Shopify Developer specializing in Conversion Rate Optimization (CRO), custom theme development, and high-performance eCommerce solutions to scale your business.",
-  keywords: "Shopify developer, CRO specialist, Shopify conversion rate optimization, custom Shopify themes, eCommerce expert",
-  authors: [{ name: "Shopify Portfolio" }],
+  description: "Hire an elite Shopify Developer specializing in Conversion Rate Optimization (CRO), Custom Shopify Theme development, Headless Shopify, and advanced Shopify Speed Optimization to aggressively scale your DTC brand.",
+  keywords: "Shopify developer, CRO specialist, Conversion Rate Expert, Shopify conversion rate optimization, Custom Shopify Theme, eCommerce expert, Headless Shopify, Shopify Speed Optimization",
+  authors: [{ name: "Shopify Portfolio Expert" }],
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Expert Shopify Developer & CRO Specialist | Boost Your Store Sales",
-    description: "Hire an expert Shopify Developer specializing in Conversion Rate Optimization (CRO), custom theme development, and high-performance eCommerce solutions to scale your business.",
+    description: "Hire an elite Shopify Developer specializing in Conversion Rate Optimization (CRO), Custom Shopify Theme development, Headless Shopify, and advanced Shopify Speed Optimization to aggressively scale your DTC brand.",
     type: "website",
+    url: "https://shopifycode.vercel.app",
+    siteName: "Shopify Conversion Expert Portfolio",
   },
   manifest: "/manifest.json",
   verification: {
