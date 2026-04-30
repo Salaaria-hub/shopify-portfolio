@@ -180,12 +180,12 @@ export default function PortfolioPage() {
             <h1 className="text-5xl sm:text-6xl font-bold mb-6 leading-tight">
               Case Studies That{' '}
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Drive Results
+                Drive Revenue
               </span>
             </h1>
 
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Real projects, real impact. See how I've helped Shopify merchants and developers achieve extraordinary results through strategic development and optimization.
+              Real projects, massive financial impact. See exactly how I have partnered with scaling Shopify merchants to engineer extraordinary results. From complex Custom Shopify Theme builds and bespoke Headless Shopify architectures to aggressive Shopify Speed Optimization campaigns, these case studies prove the immense value of hiring a true Conversion Rate Expert.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -228,8 +228,8 @@ export default function PortfolioPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Featured Success Story</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              A luxury fashion brand that went from struggling to 7-figure success
+            <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              Discover how a luxury fashion brand completely transformed their digital presence, shifting from a struggling store to a 7-figure eCommerce powerhouse through an elite Custom Shopify Theme redesign and aggressive Shopify Speed Optimization.
             </p>
           </motion.div>
 
@@ -247,9 +247,9 @@ export default function PortfolioPage() {
                   <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6">
                     <span className="text-blue-400 font-medium">Shopify Development</span>
                   </div>
-                  <h3 className="text-3xl font-bold mb-4">LuxeStyle Co. - Complete Store Transformation</h3>
-                  <p className="text-gray-400 mb-6 text-lg">
-                    Transformed a struggling fashion brand into a high-converting e-commerce powerhouse with custom Shopify development.
+                  <h3 className="text-3xl font-bold mb-4">LuxeStyle Co. - Complete Headless Store Transformation</h3>
+                  <p className="text-gray-400 mb-6 text-lg leading-relaxed">
+                    Transformed a stagnant fashion brand into a high-converting, lightning-fast e-commerce powerhouse. By leveraging an advanced Headless Shopify architecture and meticulously refactoring their Custom Liquid codebase, I eliminated friction points and skyrocketed their Return on Ad Spend (ROAS).
                   </p>
 
                   <div className="grid grid-cols-3 gap-4 mb-8">
@@ -317,9 +317,9 @@ export default function PortfolioPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Case Studies</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Detailed breakdowns of successful projects with measurable results
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Comprehensive Case Studies</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              Detailed technical breakdowns of my most successful projects. Explore how implementing advanced Custom Shopify Themes and elite Conversion Rate Expert strategies generated highly measurable, scalable results.
             </p>
           </motion.div>
 
@@ -457,9 +457,9 @@ export default function PortfolioPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Client Testimonials</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              What clients say about working together
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Client Testimonials & Feedback</h2>
+            <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              Don't just take my word for it. Here is what leading founders, CTOs, and e-commerce directors have to say about partnering with me for their Custom Shopify Theme builds, deep Shopify Speed Optimization overhauls, and Conversion Rate Expert consulting.
             </p>
           </motion.div>
 
@@ -514,9 +514,9 @@ export default function PortfolioPage() {
             </div>
 
             <div className="text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Want Similar Results?</h2>
-              <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-                Get a free audit of your Shopify store and discover opportunities to boost conversions, speed, and revenue.
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Want to Replicate These Results?</h2>
+              <p className="text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
+                If your store is currently underperforming, you are actively losing money to your competitors. Get a comprehensive, free technical audit of your Shopify store today. We will uncover exactly where you are losing sales and formulate a bulletproof plan to boost your conversions, maximize your Shopify Speed Optimization, and exponentially increase your revenue.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -64,32 +64,32 @@ export default function ContactPage() {
           <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-tight text-slate-900 dark:text-white">
             I Build Shopify Stores That <span className="text-emerald-600 dark:text-green-400">Actually Convert.</span>
           </h1>
-          <p className="text-lg text-slate-600 dark:text-neutral-400 mb-10 max-w-md">
-            Stop losing money to slow speeds and poor UX. I engineer high-performance, premium Shopify 2.0 experiences designed specifically for scaling DTC brands.
+          <p className="text-lg text-slate-600 dark:text-neutral-400 mb-10 max-w-md leading-relaxed">
+            Stop losing money to slow loading speeds, broken checkout flows, and poor user experience. As a dedicated Conversion Rate Expert, I engineer high-performance, premium Custom Shopify Themes and cutting-edge Headless Shopify architectures designed specifically for aggressively scaling DTC brands.
           </p>
 
           <div className="space-y-6 mb-10">
             <div className="flex items-start gap-4">
               <CheckCircle className="text-emerald-600 dark:text-green-400 shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Conversion-Focused Development</h4>
-                <p className="text-slate-600 dark:text-neutral-400 text-sm">Data-driven architecture, seamless checkout flows, and reduced friction to maximize your ROAS.</p>
+                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Conversion-Focused Expert Development</h4>
+                <p className="text-slate-600 dark:text-neutral-400 text-sm leading-relaxed">Leveraging deep data-driven architecture, intuitive seamless checkout flows, and psychological design principles to permanently eliminate friction and massively maximize your Return on Ad Spend (ROAS).</p>
               </div>
             </div>
             
             <div className="flex items-start gap-4">
               <Clock className="text-emerald-600 dark:text-green-400 shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Fast Turnaround & Execution</h4>
-                <p className="text-slate-600 dark:text-neutral-400 text-sm">Agile development workflows tailored for high-growth startups moving at lightning speed.</p>
+                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Elite Shopify Speed Optimization</h4>
+                <p className="text-slate-600 dark:text-neutral-400 text-sm leading-relaxed">Agile, performance-first development workflows tailored for high-growth startups moving at lightning speed. I guarantee elite Core Web Vitals scores and instantaneous page loads.</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <HeartHandshake className="text-emerald-600 dark:text-green-400 shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Reliable Long-Term Support</h4>
-                <p className="text-slate-600 dark:text-neutral-400 text-sm">I act as an extension of your team, providing proactive optimization and bug-free custom liquid code.</p>
+                <h4 className="text-lg font-semibold mb-1 text-slate-900 dark:text-white">Reliable Long-Term Technical Partnership</h4>
+                <p className="text-slate-600 dark:text-neutral-400 text-sm leading-relaxed">I do not just launch your store and disappear. I act as an embedded extension of your internal team, providing proactive optimization, complex third-party app setups, and 100% bug-free Custom Liquid code.</p>
               </div>
             </div>
           </div>
@@ -106,8 +106,8 @@ export default function ContactPage() {
         {/* === Right Section: High-Ticket Lead Form === */}
         <section className="flex-[1.1] p-8 lg:p-16 transition-colors duration-300">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-2 text-slate-900 dark:text-white">Book a Free Strategy Call</h2>
-            <p className="text-slate-600 dark:text-neutral-400 text-sm">Fill out the form below. I usually respond within 12–24 hours.</p>
+            <h2 className="text-2xl font-bold mb-2 text-slate-900 dark:text-white">Book Your Free Strategy Audit Call</h2>
+            <p className="text-slate-600 dark:text-neutral-400 text-sm leading-relaxed">Fill out the detailed project form below to request a comprehensive site audit and tailored growth strategy. Due to extremely high demand, I exclusively take on a strictly limited number of clients per month to guarantee the highest quality of Custom Shopify Theme development and Headless Shopify engineering. I typically respond within 12–24 hours.</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5 text-slate-900 dark:text-neutral-100">

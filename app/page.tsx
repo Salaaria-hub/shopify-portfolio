@@ -103,14 +103,14 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6 leading-tight">
-              Tools Built for{' '}
+              Elite Solutions Built for{' '}
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Shopify Success
               </span>
             </h1>
 
-            <p className="text-xl text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Free-tier access to premium tools that merchants and developers use to optimize, scale, and automate their Shopify stores. Built by industry experts.
+            <p className="text-xl text-gray-700 dark:text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
+              Stop losing revenue to slow load times and confusing checkout flows. As a proven Conversion Rate Expert and specialized eCommerce engineer, I provide premium tools and bespoke Custom Shopify Theme development services designed specifically to scale direct-to-consumer (DTC) brands. Whether you need an elite Headless Shopify architecture or advanced Shopify Speed Optimization, you've found the right partner.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -176,9 +176,9 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Trusted by Shopify Community</h2>
-            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-              From solo entrepreneurs to enterprise teams, developers and merchants rely on our tools daily.
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Trusted by the Global Shopify Community</h2>
+            <p className="text-gray-700 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              From ambitious solo entrepreneurs launching their first store to elite enterprise teams managing millions in revenue, top-tier developers and merchants rely on my custom tools, Headless Shopify builds, and advanced Shopify Speed Optimization strategies daily.
             </p>
           </motion.div>
 
@@ -219,8 +219,8 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Powerful Tools, Zero Learning Curve</h2>
-            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-              Simple interfaces that solve real problems. Use immediately, no setup required.
+            <p className="text-gray-700 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              Simple, elegantly designed interfaces that solve real, complex e-commerce problems. These utilities are built to perfectly complement your Custom Shopify Theme and require absolutely zero setup. Use them immediately to push your store's performance to the maximum limit.
             </p>
           </motion.div>
 
@@ -295,9 +295,9 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Proven Results</h2>
-            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-              Real projects, real impact. See what we've delivered for merchants and developers.
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Proven eCommerce Results</h2>
+            <p className="text-gray-700 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              Real, data-driven projects that generated massive financial impact. See exactly what I have delivered for ambitious merchants and scaling developers utilizing cutting-edge Conversion Rate Expert techniques and bespoke liquid engineering.
             </p>
           </motion.div>
 
@@ -358,9 +358,9 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Need Custom Development?</h2>
-              <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-8">
-                From theme customization to app development and performance optimization, we deliver enterprise-grade Shopify solutions.
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Need Elite Custom Development?</h2>
+              <p className="text-gray-700 dark:text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
+                If your store is suffering from low conversions, it's time to bring in a Conversion Rate Expert. From comprehensive Custom Shopify Theme building from scratch and advanced third-party app integration, to elite Shopify Speed Optimization and Headless Shopify architectures, I deliver bulletproof enterprise-grade eCommerce solutions that dramatically increase your bottom-line revenue.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -403,9 +403,9 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Recommended Resources</h2>
-            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-              Curated partnerships to help you build and scale your Shopify business.
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Highly Recommended Resources</h2>
+            <p className="text-gray-700 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              I only recommend the absolute best. Leverage these curated industry partnerships, elite apps, and premium platforms specifically chosen to help you build, optimize, and aggressively scale your Shopify business without wasting time.
             </p>
           </motion.div>
 
@@ -471,10 +471,10 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Ready to Optimize Your Shop?
+              Ready to Dominate Your Market?
             </h2>
-            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-8">
-              Start with free tools and scale up when you need advanced services.
+            <p className="text-gray-700 dark:text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
+              Don't let another customer abandon their cart due to slow speeds. Start by leveraging my free optimization tools to boost your store's performance today, and seamlessly scale up to my advanced, premium custom services when you are ready to completely dominate your eCommerce niche.
             </p>
 
             <motion.div
